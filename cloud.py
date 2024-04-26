@@ -23,11 +23,11 @@ for word in words:
         tokenize_words_without_stop_words.append(word)
         
 print(tokenize_words_without_stop_words[0:50])
-l=tokenize_words_without_stop_words
-d={}
-for i in l :
-    if i not in d.keys():
-        d[i] =0
-    d[i] = d[i]+1
-print(d)
+tokenize_words_without_stop_words
+dictionary={}
+for i in tokenize_words_without_stop_words :
+    if i not in dictionary.keys():
+        dictionary[i] =0
+    dictionary[i] = dictionary[i]+1
+print(dictionary)
         
