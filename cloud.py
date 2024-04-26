@@ -7,12 +7,12 @@ nltk.download('webtext')
 nltk.download('punkt')
 english_stops = set(stopwords.words('english'))
 print(english_stops)
-def read_file(file_path):
+def read_file_path(file_path):
     with open(file_path, 'r') as file:
         return file.read()
-file_path = "random_paragraphs.txt"
+file = "random_paragraphs.txt"
     # Read the contents of the file
-text = read_file(file_path)
+text = read_file_path(file)
 print(text)
 
 from nltk.tokenize import word_tokenize,sent_tokenize
